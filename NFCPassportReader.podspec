@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author       = { "Andy Qua" => "andy.qua@gmail.com" }
   spec.platform = :ios
-  spec.ios.deployment_target = "12.0"
+  spec.ios.deployment_target = "10.2"
 
   spec.source       = { :git => "https://github.com/AndyQ/NFCPassportReader.git", :tag => "#{spec.version}" }
 
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
 
   spec.swift_version = "5.0"
 
-  spec.dependency "OpenSSL-Universal", '1.1.180'
+  spec.dependency "OpenSSL-Universal", '1.1.1100'
   spec.xcconfig          = { 'OTHER_LDFLAGS' => '-weak_framework CryptoKit -weak_framework CoreNFC',
                              'ENABLE_BITCODE' => '"NO' }
 
